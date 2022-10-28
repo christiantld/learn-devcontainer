@@ -34,5 +34,5 @@
 	"features": {
 		"docker-from-docker": "latest"
 	},
-	"postStartCommand": "docker compose up -d"
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && docker compose up -d"
 }

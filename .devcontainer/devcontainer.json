@@ -33,5 +33,6 @@
 	"remoteUser": "node",
 	"features": {
 		"docker-from-docker": "latest"
-	}
+	},
+	"postStartCommand": "docker compose up -d"
 }

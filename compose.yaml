@@ -1,4 +1,4 @@
-version: '1.0'
+version: '1.6'
 
 services:
   frontend:
@@ -8,4 +8,6 @@ services:
     volumes:
       - ${LOCAL_WORKSPACE_FOLDER}:/workspace
     working_dir: /workspace
-    command: sh -c "npm install"
+    command: sh -c "npm install && npm run dev"
+    stdin_open: true
+    tty: true
